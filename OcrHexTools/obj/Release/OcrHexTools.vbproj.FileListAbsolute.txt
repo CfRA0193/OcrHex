@@ -1,0 +1,8 @@
+D:\Cleverflow.home\me.storage\OcrHex\OcrHexTools\bin\Release\OcrHexTools.dll
+D:\Cleverflow.home\me.storage\OcrHex\OcrHexTools\bin\Release\OcrHexTools.pdb
+D:\Cleverflow.home\me.storage\OcrHex\OcrHexTools\bin\Release\OcrHexTools.xml
+D:\Cleverflow.home\me.storage\OcrHex\OcrHexTools\obj\Release\OcrHexTools.Resources.resources
+D:\Cleverflow.home\me.storage\OcrHex\OcrHexTools\obj\Release\OcrHexTools.vbproj.GenerateResource.Cache
+D:\Cleverflow.home\me.storage\OcrHex\OcrHexTools\obj\Release\OcrHexTools.dll
+D:\Cleverflow.home\me.storage\OcrHex\OcrHexTools\obj\Release\OcrHexTools.xml
+D:\Cleverflow.home\me.storage\OcrHex\OcrHexTools\obj\Release\OcrHexTools.pdb
