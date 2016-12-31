@@ -74,7 +74,14 @@ Public Class OcrHexSector
     End Sub
 
     Public Function InitByOcrHex(ocrHex As IEnumerable(Of Char)) As Boolean
-        Dim filtered = OcrHexByteCodec.Filter(ocrHex, {})
+        Dim ocrHexCorrected = New String(ocrHex.ToArray())
+        ocrHexCorrected = ocrHexCorrected.Replace("B"c, "3"c)
+        ocrHexCorrected = ocrHexCorrected.Replace(")"c, ">"c)
+        ocrHexCorrected = ocrHexCorrected.Replace("5"c, "S"c)
+        ocrHexCorrected = ocrHexCorrected.Replace("Q"c, "9"c)
+        ocrHexCorrected = ocrHexCorrected.Replace("2"c, "Z"c)
+        ocrHexCorrected = ocrHexCorrected.Replace("6"c, "G"c)
+        Dim filtered = OcrHexByteCodec.Filter(ocrHexCorrected, {})
         If filtered.Length >= 8 Then
             Dim workLength = Math.Min(filtered.Length - filtered.Length Mod 2, OcrHexCharSizeNoSpaces)
             _Bytes.Clear()
