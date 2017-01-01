@@ -9,10 +9,12 @@ Module bin2hex
             AddHandler OcrHexStreamCodec.MessageOut, AddressOf MessageOut
 
             For Each arg In args
-                Dim input = File.ReadAllBytes(arg)
-                Dim outFilename = String.Format("{0}.ocrhex", arg)
-                Dim out = OcrHexStreamCodec.Encode(input, outFilename)
-                File.WriteAllBytes(outFilename, out)
+                If File.Exists(arg) Then
+                    Dim input = File.ReadAllBytes(arg)
+                    Dim outFilename = String.Format("{0}.ocrhex", arg)
+                    Dim out = OcrHexStreamCodec.Encode(input, outFilename)
+                    File.WriteAllBytes(outFilename, out)
+                End If
             Next
         End If
     End Sub

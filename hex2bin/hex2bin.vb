@@ -10,10 +10,13 @@ Module hex2bin
             AddHandler OcrHexStreamCodec.MessageOut, AddressOf MessageOut
 
             Dim parts As New List(Of Byte())
+
             For Each arg In args
-                Dim text = File.ReadAllText(arg)
-                Dim textBytes = Encoding.ASCII.GetBytes(text)
-                parts.Add(textBytes)
+                If File.Exists(arg) Then
+                    Dim text = File.ReadAllText(arg)
+                    Dim textBytes = Encoding.ASCII.GetBytes(text)
+                    parts.Add(textBytes)
+                End If
             Next
 
             Dim out = OcrHexStreamCodec.Decode(parts)
