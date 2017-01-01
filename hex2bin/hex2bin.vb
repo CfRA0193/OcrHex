@@ -5,6 +5,9 @@ Imports OcrHexTools
 Module hex2bin
     Sub Main(args As String())
         If args.Length = 0 Then
+            Console.WriteLine("hex2bin <ocrhex fragment1> <ocrhex fragment2>...")
+            Console.WriteLine("Many inputs - one output.")
+            Console.WriteLine("'Help Page' was written in 'hex2bin'!")
             File.WriteAllText("hex2bin.txt", OcrHexStreamCodec.GetInfo())
         Else
             AddHandler OcrHexStreamCodec.MessageOut, AddressOf MessageOut

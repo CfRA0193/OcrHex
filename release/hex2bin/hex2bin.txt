@@ -2,11 +2,11 @@
 OcrHex - bin to hex converter (OCR-friendly alphabet, CRC32 for every row)
 ==========================================================================
 
-OcrHex ALPHABET (0..F): #$+3479FGHLNSTXZ; '>' - space symbol
+OcrHex ALPHABET (0..F): #$+3479FGHLNSTXZ; '>' - space symbol.
 Recommended font: 'Consolas', 9 pt.
 Recommended OCR:  'FreeOCR', grayscale mode.
-To repair damaged sector in text data, firstly find in on paper (by dec number).
-Following symbol replacement is done automatically:
+To repair damaged sector in text data, firstly find it on paper (by dec number).
+Following symbol's replacement is done automatically:
 'B' => '3' ')' => '>'  '5' => 'S'  'Q' => '9'  '2' => 'Z'  '6' => 'G'
 
 Sector hexadecimal form:

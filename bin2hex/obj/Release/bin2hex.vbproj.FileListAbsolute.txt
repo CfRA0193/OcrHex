@@ -1,0 +1,10 @@
+D:\Cleverflow.home\me.storage\OcrHex\release\bin2hex\bin2hex.exe.config
+D:\Cleverflow.home\me.storage\OcrHex\release\bin2hex\bin2hex.exe
+D:\Cleverflow.home\me.storage\OcrHex\release\bin2hex\bin2hex.pdb
+D:\Cleverflow.home\me.storage\OcrHex\release\bin2hex\bin2hex.xml
+D:\Cleverflow.home\me.storage\OcrHex\bin2hex\obj\Release\bin2hex.vbprojResolveAssemblyReference.cache
+D:\Cleverflow.home\me.storage\OcrHex\bin2hex\obj\Release\bin2hex.Resources.resources
+D:\Cleverflow.home\me.storage\OcrHex\bin2hex\obj\Release\bin2hex.vbproj.GenerateResource.Cache
+D:\Cleverflow.home\me.storage\OcrHex\bin2hex\obj\Release\bin2hex.exe
+D:\Cleverflow.home\me.storage\OcrHex\bin2hex\obj\Release\bin2hex.xml
+D:\Cleverflow.home\me.storage\OcrHex\bin2hex\obj\Release\bin2hex.pdb
