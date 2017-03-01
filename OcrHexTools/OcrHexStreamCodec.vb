@@ -10,7 +10,7 @@ Public Module OcrHexStreamCodec
         RaiseEvent MessageOut("bin2hex: CRC32...")
         Dim crc32hex = BitConverter.ToUInt32(CRC32.Process(input), 0).ToString("X2")
         If input.Count >= 65536 * OcrHexSector.PayloadByteSize Then
-            Throw New Exception("Max input: 4 Mb!")
+            Throw New Exception("Max input: 2 Mb!")
         End If
         Dim out As New StringBuilder()
         Dim bytes = New Queue(Of Byte)(input)
